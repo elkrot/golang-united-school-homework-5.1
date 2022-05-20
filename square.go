@@ -1,22 +1,22 @@
 package square
 
 type Point struct {
-	X, Y uint
+	x, y uint
 }
 
 type Square struct {
-	Start Point
-	A     uint
+	start Point
+	a     uint
 }
 
 func (s *Square) End() Point {
-	return Point{s.Start.X + s.A, s.Start.Y - s.A}
+	return Point{s.start.x + s.a, s.start.y - s.a}
 }
 
 func (s *Square) Area() uint {
-	return s.A * s.A
+	return s.a * s.a
 }
 
 func (s *Square) Perimeter() uint {
-	return s.A * 4
+	return s.a * 4
 }
