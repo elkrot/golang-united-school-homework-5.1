@@ -1,7 +1,7 @@
 package square
 
 type Point struct {
-	x, y uint
+	x, y int
 }
 
 type Square struct {
