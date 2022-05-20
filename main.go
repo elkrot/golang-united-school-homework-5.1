@@ -1,7 +1,7 @@
 package main
 import (
 	"fmt"
-	"square"
+	"src/square"
 )
 func main()  {
 	p:=square.Point{X:1,Y:2}
